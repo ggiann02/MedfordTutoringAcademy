@@ -167,7 +167,7 @@ header {
 }
 
 .sub-headline {
-        font-size: 9rem;
+        font-size: 7rem;
         font-family: var(--secondary-font);
         color: var(--secondary-font-color);
         font-weight: 100;
@@ -181,7 +181,7 @@ header {
 
 .first-letter {
         text-transform: uppercase;
-        font-size: 9.7rem;
+        font-size: 7.7rem;
 }
 
 .headline {
@@ -309,7 +309,6 @@ header {
     border-radius: 5px;
     background-color: white;
     margin: 0 auto;
-    height: auto;
 }
 
 .card:hover {
@@ -324,20 +323,19 @@ header {
 
 img {
     border-radius: 5px 5px 0 0;
-    height: 80%;
     width: auto;
     position: center;
 }
 
 .card h1 {
     color: var(--secondary-font-color);
-    font-size: 3rem;
+    font-size: 2.3rem;
     font-family: var(--secondary-font);
 }
 
 .card p {
     color: var(--main-font-color-dark);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: var(--main-font);
 }
 
@@ -698,7 +696,7 @@ footer {
     }
     
     .service-cards {
-        height: 100vh;
+        height: 1200px;
     }
     
     .graphs .sub-headline{
