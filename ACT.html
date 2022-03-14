@@ -1,0 +1,993 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta name="keywords" content="medford tutoring academy, medford tutoring, medford academy, tutoring academy, medford SAT tutoring, medford ACT tutoring, medford college tutoring">
+        <meta charset ="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Medford Tutoring Academy - ACT</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <script src="https://unpkg.com/scrollreveal"></script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Roboto+Slab&family=Source+Sans+Pro:wght@600&display=swap');
+
+/* Global styles */
+
+*, 
+*::before, 
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-font: 'Source Sans Pro', sans-serif;
+    --secondary-font: 'Roboto Slab';
+    --body-font: 'Cabin', sans-serif;
+    --main-font-color-dark: #1A1A40;
+    --secondary-font-color: #270082;
+    --body-font-color: #7A0BC0;
+    --hover-font-color: #FA58B6;
+    --background-color: #8134b3;
+}
+
+
+html{
+    font-family: var(--body-font);
+    font-size: 10px;
+    color: var(--body-font-color);
+    scroll-behavior: smooth;
+}
+body {
+        overflow-x: hidden;
+}
+
+section{
+    padding: 3.9rem 0; 
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-size: 1.6rem;
+}
+
+.container{
+    width: 100%;
+    max-width: 122.5rem;
+    margin: 0 auto;
+    padding: 0 2.4rem;
+}
+
+/* Header */
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0,.5), transparent);
+}
+
+.nav {
+    height: 7.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-toggle{
+    color: #fff;
+    font-size: 2.2rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2.5rem;
+    cursor: pointer;
+    z-index: 1500;
+}
+
+.fa-times {
+    display: none;
+}
+
+.nav-list {
+    list-style: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100vh;
+    background-color: var(--main-font-color-dark);
+    padding: 4.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 1250;
+    transform: translateX(-100%);
+    transition: transform .5s;
+}
+
+
+.nav::before{
+    content: '';
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.8);
+    z-index: 1000;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity .5s;
+}
+
+.open .fa-times {
+    display: block;
+}
+
+.open .fa-bars {
+    display: none;
+}
+
+.open .nav-list {
+    transform: translateX(0);
+}
+
+.open .nav::before{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.nav-item{
+        border-bottom: 2px solid rgba(255,255,255, .3);
+}
+.nav-link {
+        display: block;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+        margin-right: -2px;
+        transition: color .5s;
+}
+
+.nav-link:hover{
+        color: var(--hover-font-color);        
+}
+            
+            .separator {
+        display: flex;
+        align-items: center;
+        justify-content: center;        
+}
+
+.line {
+        width: 100%;
+        max-width: 8.4rem;
+        height: .25rem;
+        background-color: #fff;
+        position: relative;
+        animation: grow 2s forwards;
+        animation-delay: .9s;
+        opacity: 0;
+}
+
+.line-right::before,
+.line-left::before {
+        content: '';
+        position: absolute;
+        border: .6rem solid transparent;
+        top: 50%;
+        transform: translateY(-50%);
+        animation: grow .5s forwards;
+        animation-delay: 1.2s;
+        opacity: 0;
+}
+
+.line-right::before{
+        border-right-color: #fff;
+        right: 0;
+}
+
+.line-left::before{
+        border-left-color: #fff;
+        left: 0;
+}
+
+.asterisk {
+        font-size: 1.2rem;
+        color: var(--secondary-font-color);
+        margin: 0 1.6rem;
+        opacity: 0;
+        animation: spin .7s forwards;
+        animation-delay: .7s;
+        
+}
+
+.single-animation {
+        opacity: 0;
+        animation: fadeDown .5s forwards;
+        animation-delay: 1.5s;
+}
+
+.SAT-info h5{
+        color: #fff;
+        font-size: 1.4rem;
+        font-weight: 100;
+        text-transform: uppercase;
+        margin-bottom: 1.2rem;
+        letter-spacing: 3px; 
+        margin-right: -3px;
+}
+            
+/*Accordion styles*/
+            .accordion {
+                background-color: #eee;
+                color: var(--main-font-color-dark);
+                cursor: pointer;
+                padding: 18px;
+                width: 100%;
+                border: none;
+                text-align: left;
+                outline: none;
+                font-size: 15px;
+                transition: 0.4s;
+                font-size: 20px;
+                font-family: var(--main-font)
+            }
+            
+            .active, .accordion:hover {
+                background-color: #ccc;
+            }
+            
+            .panel {
+                padding: 0 18px;
+                background-color: white;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.2s ease-out;
+            }
+            
+            .SAT-info {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100vh;
+                background-image: linear-gradient(to top right, rgba(46,34,172,1), rgba(229,76,156,1));
+                padding-top: 150px;
+                text-align: center;
+            }
+            
+            .accordion-container {
+                margin-top: 70px;
+            }
+            
+            .accordion-container p {
+                padding: 20px;
+                color: var(--secondary-font-color);
+            }
+            
+            .sub-headline {
+        font-size: 7rem;
+        font-family: var(--secondary-font);
+        color: var(--secondary-font-color);
+        font-weight: 100;
+        line-height: .4;
+        letter-spacing: 2px;
+        padding-bottom: 20px;
+        opacity: 0;
+        animation: fadeUp .5s forwards;
+        animation-delay: .5s;
+}
+
+
+.headline {
+        color: #fff;
+        font-size: 3rem;
+        font-family: var(--main-font);
+        text-transform: uppercase;
+        font-weight: 900;
+        letter-spacing: .5rem;
+        margin-right: -.5rem;
+        animation: scale .5s forwards;
+}
+            /* Footer  */
+
+footer {
+        padding: 7.9rem 0;
+        background-color: #121212;
+        color: #fff;
+        text-align: center;
+        position: relative;
+}
+
+.back-to-top {
+        width: 7rem;
+        height: 7rem;
+        background-color: #121212;
+        position: absolute;
+        top: -3rem;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        
+}
+
+.back-to-top i{
+        display: block;
+        color: #fff;
+        font-size: 2rem;
+        padding: 2rem;
+        animation: up 2s infinite;
+}
+
+.footer-content{
+        /* overflow: hidden; */
+}
+
+.footer-content h4 {
+        font-size: 1.9rem;
+        text-transform: uppercase;
+        font-weight: 100;
+        letter-spacing: 3px;
+        margin-bottom: 3rem;
+}
+
+.footer-content .asterisk {
+        margin: 2.4rem 0;
+        color: var(--hover-font-color);
+}
+
+.footer-content-about {
+        margin-bottom: 5.4rem;
+}
+
+.footer-content-about p {
+        line-height: 2;
+}
+
+.social-icons {
+        list-style: none;
+        margin-bottom: 5.4rem;
+        display: flex;
+        justify-content: center;
+}
+
+.social-icons i {
+        font-size: 2rem;
+        color: #fff;
+        padding: .8rem 2rem;
+        opacity: .5;
+        transition: color .5s;
+}
+
+.social-icons i:hover,
+.social-icons i:focus {
+        color: var(--hover-font-color);        
+}
+
+.newsletter {
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+}
+
+.newsletter-input {
+        width: 100%;
+        max-width: 25rem;
+        padding: 1rem;
+        border-radius: .4rem;
+}
+
+.newsletter-btn {
+        background-color: transparent;
+        border: none;
+        color: var(--hover-font-color);
+        cursor: pointer;
+        font-size: 1.6rem;
+    text-align: center;
+    margin-top: 15px;
+}
+/*            Sat contact form style*/
+            
+            .SAT-contact {
+                height: 80vh;
+                width: 100%;
+                background-color: white;
+                text-align: center;
+            }
+            
+            .SAT-contact .SATform {
+                width: 60%;
+                margin: 0 auto;
+                text-align: center;
+                background-color: var(--body-font-color);
+                border-radius: 5px;
+                padding: 40px;
+                font-family: var(--main-font);
+            }
+            
+            .SAT-contact .headline {
+                color: var(--body-font-color);
+                font-size: 4rem;
+                letter-spacing: 2px;
+            }
+            
+            .SAT-contact .sub-headline {
+                color: var(--secondary-font-color);
+                font-size: 8rem;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+            
+            .SAT-contact p {
+                color: var(--secondary-font-color);
+                padding-bottom: 20px;
+                font-size: 20px;
+            }
+            
+            .SAT-contact .registerbutton {
+                padding: 20px 50px;
+            }
+            
+            .SATform input[type=text]{
+                width: 100%;
+                margin: 8px 0;
+                padding: 10px;
+            }
+            .btn {
+        display: inline-block;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-right: -2px;
+}
+            
+            .body-btn {
+        font-size: 1.5rem;
+        color: var(--secondary-font-color);
+        position: relative;
+        transition: color .5s;
+                cursor: pointer;
+}
+
+.body-btn:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        width: 100%;
+        height: 2px;
+        background-color: var(--secondary-font-color);
+        transition: background-color .5s;
+}
+
+
+.body-btn:hover,
+.body-btn:focus {
+        color: var(--main-font-color-dark);
+}
+
+.body-btn:hover::before,
+.body-btn:focus::before {
+        background-color: var(--main-font-color-dark);        
+}       
+
+/* Media queries */
+
+@media screen and (min-width: 900px) {
+        section {
+                padding: 7.9rem;
+        }
+        
+        .menu-toggle {
+                display: none;
+        }
+        
+        .nav {
+                justify-content: space-between;
+        }
+        .nav-list {
+                position: initial;
+                width: initial;
+                height: initial;
+                background-color: transparent;
+                padding: 0;
+                justify-content: initial;
+                flex-direction: row;
+                transform: initial;
+                transition: initial;
+        }
+        
+        .nav-item {
+                margin: 0 2.4rem;
+                border: none;
+        }
+        
+        .nav-item:last-child {
+                margin-right: 0;
+        }
+        
+        .nav-link {
+                font-size: 1.3rem;
+        }
+        
+        .active {
+                position: relative;
+        }
+        
+        .active::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                background-color: #fff;
+                left: 0;
+                bottom: -3px;
+        }
+        
+        .sub-headline {
+                font-size: 11rem;
+        }
+        .first-letter {
+                font-size: 11.7rem;
+        }
+        
+        .headline {
+                font-size: 5rem;
+                letter-spacing: .8rem;
+        }
+        .line {
+                max-width: 11.4rem;
+        }
+        
+        .info {
+                display: flex;
+                align-items: center;
+        }
+        
+        .info > div {
+                flex: 1;
+        }
+        
+        .padding-right{
+                padding-right: 7rem;
+        }
+        
+        .footer-content {
+                max-width: 77.5rem;
+                margin: auto;
+        }
+        
+        .footer-content-about {
+                max-width: 51.3rem;
+                margin: 0 auto 5.4rem;
+        }
+        
+        .footer-content-divider {
+                display: flex;
+                justify-content: space-between;
+        }
+        
+        .social-media,
+        .newsletter-form {
+                width: 100%;
+                max-width: 27.3rem;
+                margin: 0 1rem;        
+        }
+        
+        .social-icons i {
+                opacity: 1;
+        }
+        
+        .newsletter-btn {
+                margin-left: 7.5rem;
+        } 
+}
+
+/*
+@media screen and (max-width: 1200px) {
+    .card-left,
+    .card-right{
+        width: 40%;
+    }
+}
+*/
+
+@media screen and (max-width: 600px) {
+    .card-right,
+    .card-left{
+        width: 100%;
+    }
+    
+    .service-cards {
+        height: 100vh;
+    }
+    
+    .graphs .sub-headline{
+            line-height: 1;
+            font-size: 5rem;
+            
+    }
+    
+    .graphs .headline {
+           font-size: 3rem;
+    }
+    
+    .div-SAT,
+    .div-ACT {
+            width: 100%;
+            margin-top: 30px;
+    }
+    
+    .graphs {
+            height: 100vh;
+    }
+    
+    .SAT-contact {
+        height: 100vh;
+    }
+    
+    .SAT-contact .sub-headline {
+        line-height: 1;
+        
+    }
+    
+    .SAT-contact .SATform {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/* ANIMATIONS */
+
+@keyframes fadeUp {
+        0%{
+                transform: translateY(4rem);
+        }
+        100%{
+                opacity: 1;
+                transform: translateY(0);
+        }
+}
+
+@keyframes scale {
+        0%{
+                transform: scale(2);
+        }
+        100%{
+                opacity: 1;
+                transform: scale(1);
+        }
+}
+
+@keyframes grow {
+        0%{
+                width: 0%;
+        }
+        100%{
+                opacity: 1;
+                width: 100%;
+        }
+}
+
+@keyframes fadeDown {
+        0%{
+                transform: translateY(-1rem);
+        }
+        100%{
+                opacity: 1;
+                transform: translateY(0);
+        }
+}
+
+@keyframes spin {
+        0%{
+                transform: rotate(0);
+        }
+        100%{
+                opacity: 1;
+                transform: rotate(-360deg);
+        }
+}
+
+@keyframes up {
+        0%{
+                opacity: 0;
+        }
+        50% {
+                opacity: 1;
+        }
+        100%{
+                opacity: 0;
+                transform: translateY(-1rem);
+        }
+}
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <nav class="nav">
+                    <div class="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <a href="index.html" class="logo">
+                        <!-- <img src="tutoring.png" alt="logo"> -->
+                    </a>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="services.html" class="nav-link">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact.html" class="nav-link">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="SAT.html" class="nav-link">SAT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="act.html" class="nav-link active">ACT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="news.html" class="nav-link">News</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- Header ends -->
+        
+        <section class="SAT-info">
+            <div class="container">
+                <div class="header">
+                    <h1 class="sub-headline">Learn more</h1>
+                    <h2 class="headline">About the ACT</h2>
+                     <div class="separator" style="margin-top: 10px; margin-bottom: 15px;">
+                        <div class="line line-left"></div>
+                        <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                        <div class="line line-right"></div>
+                    </div>
+                    <div class="single-animation">
+                        <h5>The #1 tutoring academy in Medford, MA</h5>
+                    </div>
+                </div>
+                <div class="accordion-container">
+                    <button class="accordion">What is the ACT?
+                        <i class="fas fa-plus" style="float: right; padding-right: 20px;"></i>
+                    </button> 
+                    <div class="panel">
+                        <p>The ACT is a college entrance exam that most colleges
+                            and universities use to determine admissions. The goal of
+                            the ACT is to assess a high school student's college
+                            preparation and give universities with a single point
+                            of comparison for all candidates.
+                        </p>
+                    </div>
+                    
+                    <button class="accordion">When should I take the ACT?
+                        <i class="fas fa-plus" style="float: right; padding-right: 20px;"></i>
+                    </button>
+                    <div class="panel">
+                        <p>The ACT is taken by the majority of high school students
+                            in the spring of their junior year or the fall of their
+                            senior year. It's critical to give yourself enough time
+                            to retake the test if you need to improve your score
+                            before applying to college.
+                        </p>
+                    </div>
+                    
+                    <button class="accordion">What is on the ACT?
+                        <i class="fas fa-plus" style="float: right; padding-right: 20px;"></i>
+                    </button>
+                    <div class="panel">
+                        <p>There are four ACT sections: English, Reading, Math,
+                            and Science.
+                        </p>
+                    </div>
+                    
+                    <button class="accordion">How long is the ACT?
+                        <i class="fas fa-plus" style="float: right; padding-right: 20px;"></i>
+                    </button>
+                    <div class="panel">
+                        <p>The ACT is 2 hours and 55 minutes long. If you choose
+                            to take the ACT with Essay, the test will be 3 hours
+                            and 35 minutes long.</p>
+                    </div>
+                    
+                    <button class="accordion">How is the ACT scored?
+                        <i class="fas fa-plus" style="float: right; padding-right: 20px;"></i>
+                    </button>
+                    <div class="panel">
+                        <p>The ACT is graded on a scale of 1 to 36 for each section.
+                            The average of your four section scores is your composite
+                            ACT score, which is also on a scale of 1 to 36. If you
+                            decide to take the ACT with Writing Test, you will
+                            receive a separate score on the Writing Test.
+
+                        </p>
+                    </div>
+                    
+                    <button class="accordion">How do I register for the ACT?
+                        <i class="fas fa-plus" style="float: right; padding-right: 20px;"></i>
+                    </button>
+                    <div class="panel">
+                        <p> Please visit the ACT registration website
+                            for more details.
+
+                        </p> <a href="https://satsuite.collegeboard.org/sat/registration" style="color: var(--secondary-font-color); font-size: 18px;">Click here for more info.</a>
+                    </div>
+                    
+                    <button class="accordion">How do I prep for the ACT?
+                        <i class="fas fa-plus" style="float: right; padding-right: 20px;"></i>
+                    </button>
+                    <div class="panel">
+                        <p>We can assist you. We believe every student on any budget
+                            can benefit from our SAT preparation services.
+                        </p>
+                    </div>
+                    
+                    
+                    <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+                </div>
+            </div>
+        </section>
+        <section class="SAT-contact">
+            <div class="container">
+                <h2 class="headline">Wish to improve your score?</h2>
+                <h1 class="sub-headline">Register here</h1>
+                    
+                <p>Fill out this form if you wish to be contacted by one of our tutors for personalized SAT tutoring.
+                </p>
+                
+                <a class="btn body-btn" id="functionclick" style="margin-bottom: 30px;">Register</a>
+                <div class="SATform" id ="satform" >
+                    <form name="registerform">
+                        <input type="text" name="firstname" placeholder="First Name">
+                        <input type="text" name="lastname" placeholder="Last Name">
+                        <input type="text" name="email" placeholder="Your Email">
+                        <input type="text" name="phone" placeholder="Your phone number">
+                    </form> 
+                </div>
+                    <div class="registerbutton" id="registerbutton">
+                        <a class="btn body-btn" type="submit" onclick="validateRegisterForm()">Submit</a>
+                    </div>
+                    
+                    <script>
+                        function validateRegisterForm() {
+                            let fname = document.forms["registerform"]["firstname"].value;
+                            let lname = document.forms["registerform"]["lastname"].value;
+                            let email = document.forms["registerform"]["email"].value;
+                            let phone = document.forms["registerform"]["phone"].value;
+                            let isnum = /^\d+$/.test(phone);
+                            let phonelength = phone.length;
+                            if (fname == "" && lname == "" && email == "" && phone == ""){
+                                alert("The form is blank. Please fill out every field");
+                            }
+                            else if (fname == "") {
+                                alert("First name must be filled out");
+                            } else if (lname == "") {
+                                alert("Last name has to be filled out");
+                            } else if (email == "") {
+                                alert("Email must be filled out");
+                            } else if (!email.includes("@")) {
+                                alert("Email must be valid (include @)");
+                            } else if (phone == "") {
+                                alert("Phone number must be filled out");
+                            } else if (isnum == false) {
+                                alert("Phone number must be valid (only contain numbers)");
+                            } else if (phonelength != 10) {
+                                alert("Please enter a correct phone number (length of 10)");
+                            } else {
+                                let message = "Hi " + fname + " " + lname + ", thank you for reaching out. Our specialized SAT tutors will reach out to you soon.";
+                                alert(message);
+                            }
+                        }
+                                                
+                    </script>
+                
+            </div>
+        </section>
+<!--        Cards section ends-->
+<footer>
+                <div class="container">
+                        <div class="back-to-top">
+                        <a href="#hero"><i class="fas fa-chevron-up"></i></a>
+                        </div>
+                        <div class="footer-content">
+                                <div class="footer-content-about animate-up">
+                                        <h4>About Medford Tutoring Academy</h4>
+                                        <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                                        <p>
+                                                Medford Tutoring Academy has been helping high-school students in their journey to college since 1995. To make tutoring more accessible, we have added online services to aid students through the whole world.
+                                        </p>
+                                </div>
+                                <div class="footer-content-divider animate-bottom">
+                                        <div class="social-media">
+                                                <h4>Follow along</h4>
+                                                <ul class="social-icons">
+                                                        <li>
+                                                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                                        </li>
+                                                        <li>
+                                                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                                        </li>
+                                                        <li>
+                                                                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                                                        </li>
+                                                        <li>
+                                                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                                        </li>
+                                                </ul>
+                                        </div>
+                                        <div class="newsletter-container">
+                                                <h4>Newsletter</h4>
+                                                <form action="" class="newsletter-form" name ="newsletter">
+                                                        <input type="text" class="newsletter-input" placeholder="Your Name" id="inputname" name="inputname">
+                                                        <input type="text" class="newsletter-input" placeholder="Your Email Address ..." id="inputemail" name="inputemail">
+                                                        <button class="newsletter-btn" type="submit" onclick="validateForm()">
+                                                         Submit
+                                                        </button>
+                                                </form>
+                                                <script>
+                                                function validateForm() {
+                                                        let name = document.forms["newsletter"]["inputname"].value;
+                                                        let email = document.forms["newsletter"]["inputemail"].value;
+                                                        if (name == "") {
+                                                            alert("Name must be filled out");
+                                                            return false;
+                                                        } else if (email == "") {
+                                                            alert("Email must be filled out");
+                                                            return false;
+                                                        } else if (!email.includes("@")) {
+                                                            alert("Email must be valid (include @)");
+                                                        }
+                                                        else {
+                                                            let message = "Hello " + name + ", thank you for providing your email! We will reach out to you soon.";
+                                                            alert(message);
+                                                        }
+                                                }
+                                                
+                                                </script>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        
+        </footer>
+        
+        <script src="main.js"></script>
+    </body>
+
+</html>
